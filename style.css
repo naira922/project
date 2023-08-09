@@ -1,0 +1,53 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#game {
+    width: 300px;
+    height: 500px;
+    border: 1px solid rgb(182, 204, 228);
+    margin: auto;
+    position: relative;
+    top: 80px;
+    background-image: linear-gradient(to bottom, #47a2df, rgb(194, 212, 232));
+    overflow: hidden;
+}
+
+#player {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(16, 78, 165);
+    position: absolute;
+    top: 400px;
+    left: 100px;
+}
+
+#block {
+    width: 50px;
+    height: 50px;
+   /* background-image: url(Mariom.ico);*/
+    position: absolute;
+    top: -100px;
+    left: 100px;
+    animation: movedown 2s linear infinite;
+}
+
+@keyframes movedown {
+    0% {
+        top: -100px;
+    }
+
+    100% {
+        top: 100%;
+    }
+}
+
+#score {
+    font-family: cursive;
+    font-style: italic;
+
+
+}
